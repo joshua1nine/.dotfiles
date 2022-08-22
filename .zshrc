@@ -125,9 +125,10 @@ alias lla='exa -a -l --sort=type'
 
 # Project Shortcuts
 alias sp="cd ~ && cd \$(find ~/Repos/Websites ~/Repos/Apps ~/Repos/Demos -mindepth 1 -maxdepth 1 -type d | fzf)"
+alias pot="cd Local\ Sites/potawatomi/app/public/wp-content/themes/potawatomi"
 
 # Config Shortcuts
-alias zshrc="vi ~/.zshrc"
+alias zrc="vi ~/.zshrc"
 alias virc="cd ~/.config/nvim && vi"
 alias omz="open ~/.oh-my-zsh"
 alias tmuxrc="vi ~/.tmux.conf"
