@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+proj=$1
+
+if [[ $proj == "pot" ]]; then
+ssh spider@cpn-spider /bin/bash << EOF
+cd /var/www/dev.potawatomi.org/wp-content/themes/potawatomi
+git pull
+EOF
+else
+  echo "Project not found"
+fi
