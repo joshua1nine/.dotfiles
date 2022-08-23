@@ -1,12 +1,25 @@
 #!/bin/zsh
 
 proj=$1
+projects=`echo "pot chc jobs gaming" | tr ' ' '\n'`
 
-if [[ $proj == "pot" ]]; then
+if [ $# -eq 0 ]
+  then
+    selected=`echo $projects | fzf`
+fi
+
+if [[ $proj == "pot" || $selected == "pot" ]]; then
 ssh spider@cpn-spider /bin/bash << EOF
 cd /var/www/dev.potawatomi.org/wp-content/themes/potawatomi
 git pull
 EOF
+elif [[ $proj == "chc" || $selected == "chc" ]]; then
+ echo "Project CI/CD not setup." 
+elif [[ $proj == "jobs" || $selected == "jobs" ]]; then
+ echo "Project CI/CD not setup." 
+elif [[ $proj == "gaming" || $selected == "gaming" ]]; then
+ echo "Project CI/CD not setup." 
 else
   echo "Project not found"
+  echo $selected
 fi
