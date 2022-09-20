@@ -133,4 +133,9 @@ alias virc="cd ~/.config/nvim && vi"
 alias omz="open ~/.oh-my-zsh"
 alias tmuxrc="vi ~/.tmux.conf"
 
+# Server Shortcuts
+alias spider="ssh spider@cpn-spider"
+alias espike="ssh spider@cpn-espike"
+alias aragog="ssh spider@cpn-aragog"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
