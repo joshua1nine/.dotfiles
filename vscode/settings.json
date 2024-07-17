@@ -1,0 +1,512 @@
+{
+  "editor.accessibilitySupport": "off",
+  "editor.fontSize": 12,
+  "editor.suggestSelection": "first",
+  "editor.minimap.autohide": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": false,
+  "editor.tabSize": 2,
+  "editor.fontLigatures": "'calt', 'ss01'",
+  "editor.fontFamily": "'FiraCode Nerd Font','Cascadia Code', Consolas, 'Courier New', monospace",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.rename.enablePreview": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "breadcrumbs.enabled": false,
+  "debug.console.fontSize": 12,
+  "workbench.editor.showTabs": "single",
+  "workbench.activityBar.location": "hidden",
+  "workbench.layoutControl.enabled": false,
+  "explorer.compactFolders": false,
+  "problems.showCurrentInStatus": true,
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.silentNotifications": false,
+  "window.commandCenter": false,
+  "window.zoomLevel": 2,
+  "window.titleBarStyle": "native",
+  "window.autoDetectColorScheme": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.lineNumbers": "on",
+  "editor.cursorSurroundingLines": 10,
+  "editor.unicodeHighlight.allowedLocales": {
+    "es": true
+  },
+  "workbench.colorCustomizations": {
+    "sideBar.background": "#1F1F1F",
+    "sideBarSectionHeader.background": "#1F1F1F",
+    "sideBarSectionHeader.border": "#1F1F1F",
+    "sideBar.border": "#1F1F1F"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "files.autoSave": "onFocusChange",
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "css.validate": false,
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "cva\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ],
+    [
+      "cx\\(([^)]*)\\)",
+      "(?:'|\"|`)([^']*)(?:'|\"|`)"
+    ],
+    [
+      "clsx\\(([^)]*)\\)",
+      "(?:'|\"|`)([^']*)(?:'|\"|`)"
+    ]
+  ],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "html.format.indentInnerHtml": true,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.tabs.showActions": "always",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.copyOnSelection": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.handleKeys": {
+    "<C-w>": false
+  },
+  "vim.leader": "<Space>",
+  "vim.ignorecase": false,
+  "vim.hlsearch": true,
+  "vim.sneak": true,
+  "vim.replaceWithRegister": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(255, 255, 255, 0.3)",
+  "vim.foldfix": true,
+  "vim.showMarksInGutter": true,
+  "vim.sneakUseIgnorecaseAndSmartcase": true,
+  "vim.targets.bracketObjects.enable": false,
+  "vim.targets.smartQuotes.aIncludesSurroundingSpaces": false,
+  "vim.smartRelativeLine": false,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "leader",
+        "v"
+      ],
+      "commands": [
+        ":vsplit"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "s"
+      ],
+      "commands": [
+        ":split"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.focusLeftGroup"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "j"
+      ],
+      "commands": [
+        "workbench.action.focusBelowGroup"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "k"
+      ],
+      "commands": [
+        "workbench.action.focusAboveGroup"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.focusRightGroup"
+      ]
+    },
+    {
+      "before": [
+        "j"
+      ],
+      "after": [
+        "g",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "g",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "<S-j>"
+      ],
+      "after": [
+        "8",
+        "j",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "<S-k>"
+      ],
+      "after": [
+        "8",
+        "k",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "g"
+      ],
+      "commands": [
+        "workbench.view.scm"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "s",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "s",
+        "g"
+      ],
+      "commands": [
+        "workbench.action.quickTextSearch"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "s",
+        "r"
+      ],
+      "commands": [
+        "editor.action.startFindReplaceAction"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "q"
+      ],
+      "commands": [
+        ":q!"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "k"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "/"
+      ],
+      "commands": [
+        ":noh"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "d"
+      ],
+      "commands": [
+        "editor.action.mark.next"
+      ]
+    },
+    {
+      "before": [
+        "[",
+        "d"
+      ],
+      "commands": [
+        "editor.action.mark.next"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "i"
+      ],
+      "commands": [
+        "extension.toggleBool"
+      ]
+    },
+    {
+      "before": [
+        "u"
+      ],
+      "commands": [
+        "undo"
+      ]
+    },
+    {
+      "before": [
+        "<C-r>"
+      ],
+      "commands": [
+        "redo"
+      ]
+    },
+    {
+      "before": [
+        "n"
+      ],
+      "after": [
+        "n",
+        "z",
+        "z",
+        "z",
+        "v"
+      ]
+    },
+    {
+      "before": [
+        "N"
+      ],
+      "after": [
+        "N",
+        "z",
+        "z",
+        "z",
+        "v"
+      ]
+    },
+    {
+      "before": [
+        "m",
+        "d"
+      ],
+      "commands": [
+        ":delmarks!",
+        "<CR>"
+      ]
+    },
+    {
+      "before": [
+        "m",
+        "m"
+      ],
+      "commands": [
+        ":marks",
+        "<CR>"
+      ]
+    },
+    {
+      "before": [
+        "<CR>"
+      ],
+      "after": [
+        "o",
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.insertModeKeyBindingsNonRecursive": [],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<S-j>"
+      ],
+      "after": [
+        "<c-d>",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "<S-k>"
+      ],
+      "after": [
+        "<c-u>",
+        "z",
+        "z"
+      ]
+    }
+  ],
+  "errorLens.delay": 500,
+  "errorLens.followCursor": "activeLine",
+  "errorLens.statusBarMessageEnabled": true,
+  "errorLens.statusBarMessageAlignment": "right",
+  "errorLens.statusBarMessagePriority": 10000,
+  "errorLens.statusBarColorsEnabled": true,
+  "errorLens.enabledDiagnosticLevels": [
+    "error",
+    "warning"
+  ],
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "projectManager.git.baseFolders": [
+    "~/Projects",
+    "~/Projects/Side-Projects"
+  ],
+  "projectManager.sortList": "Recent",
+  "cSpell.userWords": [
+    "amondnet",
+    "astro",
+    "autofetch",
+    "autoincrement",
+    "Blazor",
+    "Blazored",
+    "calt",
+    "camo",
+    "Cascadia",
+    "CLOUDINARY",
+    "clsx",
+    "Completionist",
+    "Consolas",
+    "Contoso",
+    "datetime",
+    "defaultsauto",
+    "Dollyn",
+    "esbenp",
+    "Fira",
+    "fontawesome",
+    "fortawesome",
+    "groq",
+    "headlessui",
+    "heroicons",
+    "highlightedyank",
+    "hookform",
+    "hotwheels",
+    "Hsts",
+    "ignorecase",
+    "Ionicons",
+    "Juneteenth",
+    "keyof",
+    "minecraft",
+    "nativewind",
+    "Neutra",
+    "nextauth",
+    "oper",
+    "photoswipe",
+    "planetscale",
+    "portabletext",
+    "Pressable",
+    "Quickbooks",
+    "recipeingredients",
+    "returntype",
+    "semibold",
+    "superjson",
+    "tailwindcss",
+    "tanstack",
+    "tinyint",
+    "tiptap",
+    "trpc",
+    "TURSO",
+    "typesafety",
+    "vercel",
+    "webfont"
+  ],
+  "typescript.preferences.renameMatchingJsxTags": false,
+  "javascript.preferences.renameMatchingJsxTags": false,
+  "html.autoClosingTags": false,
+  "javascript.autoClosingTags": false,
+  "typescript.autoClosingTags": false
+}
