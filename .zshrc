@@ -18,6 +18,12 @@ export ZSH="$HOME/.oh-my-zsh"
 # Path to custom scripts
 export PATH="$PATH:$HOME/.dotfiles/.bin"
 
+# Path to tumxifier
+export PATH="$PATH:$HOME/.tmux/plugins/tmuxifier/bin"
+eval "$(tmuxifier init -)"
+
+# export PATH="$PATH:$HOME/.tmuxifier/bin"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -93,6 +99,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+export EDITOR='nvim'
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -103,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
-# fi
+# f
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -122,14 +129,46 @@ alias ls='exa --sort=type'
 alias lsa='exa -a --sort=type'
 alias ll='exa -l --sort=type'
 alias lla='exa -a -l --sort=type'
+alias so='source ~/.zshrc'
+alias mamp='cd /Applications/MAMP/htdocs'
+
+# Functions
+# Create a new directory and enter it
+function take() { mkdir -p $1 && cd $1; }
+
+# Create a quick note
+function note {
+  echo "---------------" >> $HOME/Notebook/drafts.md
+  echo "DATE: $(date)" >> $HOME/Notebook/drafts.md
+  echo "$@" >> $HOME/Notebook/drafts.md
+  echo "---------------" >> $HOME/Notebook/drafts.md
+}
 
 # Project Shortcuts
-alias sp="cd ~ && cd \$(find ~/Repos/Websites ~/Repos/Apps ~/Repos/Demos -mindepth 1 -maxdepth 1 -type d | fzf)"
+alias sp="cd ~ && cd \$(find ~/Projects/Laborsync ~/Projects/Demos ~/Projects/Side-Projects -mindepth 1 -maxdepth 1 -type d | fzf)"
+alias lab="tmuxifier s lab"
+alias tks="tmux kill-server"
 
 # Config Shortcuts
 alias zrc="vi ~/.zshrc"
 alias virc="cd ~/.config/nvim && vi"
+alias wezrc="vi ~/.config/wezterm/wezterm.lua"
 alias omz="open ~/.oh-my-zsh"
-alias tmuxrc="vi ~/.tmux.conf"
+alias trc="vi ~/.tmux.conf"
+alias notes="glow ~/Notebook/"
+alias ..="cd .."
+alias ....="cd ../.."
+
+# General Shortcuts
+alias cl="clear"
+alias td="turbo dev"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# pnpm
+export PNPM_HOME="/Users/joshuamichael/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
